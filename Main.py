@@ -49,6 +49,7 @@ def test():
 	if "This promotion code is invalid." in response:
 		print("Bad")
 	else:
+		print(response)
 		botA.send_message(chat_id=ch_id, text=z)
 		botA.send_message(chat_id=ch_id, text=response)		
 while True:
